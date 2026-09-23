@@ -1,5 +1,6 @@
 package ci.ansut.cmz.feature.authentication.presentation.login
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
@@ -32,6 +33,8 @@ fun LoginRoute(
                                 googleCredentialManager.signIn(
                                     context = context,
                                 )
+
+                            Log.d("credential", credential.toString())
 
                             viewModel.signInWithGoogle(
                                 idToken = credential.idToken,

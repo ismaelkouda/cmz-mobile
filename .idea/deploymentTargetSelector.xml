@@ -59,10 +59,10 @@
       </SelectionState>
       <SelectionState runConfigName="MainActivity">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-09T12:32:03.613565Z">
+        <DropdownSelection timestamp="2026-09-22T10:13:28.345354Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/macbookair/.android/avd/Resizable_Experimental.avd" />
+              <DeviceId pluginId="Wireless" identifier="serviceName=adb-RFCX31FDSBE-xyaHhH" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -19,7 +19,6 @@ class AuthApi(
         return httpClient
             .post("auth/google") {
                 contentType(ContentType.Application.Json)
-
                 setBody(
                     GoogleSignInRequestDto(
                         idToken = idToken,
@@ -27,5 +26,9 @@ class AuthApi(
                 )
             }
             .body()
+    }
+
+    suspend fun signOut() {
+        httpClient.post("auth/logout")
     }
 }
